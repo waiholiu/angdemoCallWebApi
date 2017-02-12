@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+
+
+
+
+<p *ngFor="let widget of allWidgets">
+  {{widget.Name}} (Age {{widget.Age}}) and id is {{widget.id}}
+  <input type="button" (click)="onDeleteWidget(widget)" value="Delete" />
+</p>
